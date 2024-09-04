@@ -12,8 +12,8 @@ const Task = (props) => {
                 setIsHovered(false);
             }}>
 
-            <p>{props.task}</p>
-            {(isHovered) && <span onClick={()=>{
+            <p className='mx-3 mt-1'>{props.task}</p>
+            {(isHovered) && <span className='mx-3 mt-1' onClick={()=>{
                 props.onRemove()
             }}>X</span>}
             
